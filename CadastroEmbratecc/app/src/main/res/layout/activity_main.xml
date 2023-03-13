@@ -7,75 +7,84 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editCod"
-        android:layout_width="150px"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Cod"
-        android:inputType="number" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"/>
 
     <EditText
         android:id="@+id/editNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="NomeCompleto"
-        android:inputType="textPersonName" />
+        android:hint="Nome"/>
 
     <EditText
         android:id="@+id/editCpf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="cpf"
-        android:inputType="number" />
+        android:hint="Cpf"/>
 
     <EditText
-        android:id="@+id/editPhone"
+        android:id="@+id/editTelefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        tools:hint="Telefone" />
+        android:hint="Telefone"/>
 
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:hint="Email"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btnLimpar"
+        <EditText
+            android:id="@+id/editId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Limpar" />
+            android:enabled="false"
+            />
+
+        <Button
+            android:id="@+id/btnNovo"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="Novo"
+            android:background="@color/red"/>
 
         <Button
             android:id="@+id/btnSalvar"
-            android:layout_width="wrap_content"
+            android:layout_width="139dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Salvar" />
+            android:layout_marginLeft="1dp"
+            android:text="Salvar"
+            android:background="@color/red"/>
 
         <Button
-            android:id="@+id/btnExcluir"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnApagar"
+            android:layout_width="111dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Excluir" />
+            android:layout_marginLeft="1dp"
+            android:text="Apagar"
+            android:background="@color/red"/>
+
     </LinearLayout>
 
     <ListView
         android:id="@+id/listViewClientes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
+
 </LinearLayout>

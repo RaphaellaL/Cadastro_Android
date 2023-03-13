@@ -1,50 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <TextView-->
+<!--        android:id="@+id/itemId"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        />-->
 
 
     <TextView
-        android:id="@+id/textCod"
-        android:layout_width="wrap_content"
+        android:id="@+id/itemNome"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="cod" />
+        android:text="Nome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#4C4646" />
 
     <TextView
-        android:id="@+id/textNome"
-        android:layout_width="wrap_content"
+        android:id="@+id/itemCpf"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="81dp"
-        android:text="nome" />
+        android:text="Cpf"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView
-        android:id="@+id/textCpf"
-        android:layout_width="wrap_content"
+        android:id="@+id/itemTelefone"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="46dp"
-        android:text="cpf" />
+        android:text="Telefone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView
-        android:id="@+id/textPhone"
-        android:layout_width="wrap_content"
+        android:id="@+id/itemEmail"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="89dp"
-        android:layout_marginTop="47dp"
-        android:text="phone" />
+        android:text="Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-    <TextView
-        android:id="@+id/textEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:text="email" />
-</RelativeLayout>
+
+</LinearLayout>
